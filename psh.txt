@@ -1,0 +1,54 @@
+
+bikas@BIKASH-DAS MINGW32 ~/Desktop/Ace (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/bikas/Desktop/Ace/.git/
+
+bikas@BIKASH-DAS MINGW32 ~/Desktop/Ace (master)
+$ ls
+'New Text Document.txt'   notes1.txt
+
+bikas@BIKASH-DAS MINGW32 ~/Desktop/Ace (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        New Text Document.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+bikas@BIKASH-DAS MINGW32 ~/Desktop/Ace (master)
+$ git add .
+
+bikas@BIKASH-DAS MINGW32 ~/Desktop/Ace (master)
+$ ls
+'New Text Document.txt'   notes1.txt
+
+bikas@BIKASH-DAS MINGW32 ~/Desktop/Ace (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   New Text Document.txt
+
+
+bikas@BIKASH-DAS MINGW32 ~/Desktop/Ace (master)
+$ git commit -m "New File "
+[master 7fe1b21] New File
+ 1 file changed, 73 insertions(+)
+ create mode 100644 New Text Document.txt
+
+bikas@BIKASH-DAS MINGW32 ~/Desktop/Ace (master)
+$ git remote add origin https://github.com/Bikash0001/Ace.git
+fatal: remote origin already exists.
+
+bikas@BIKASH-DAS MINGW32 ~/Desktop/Ace (master)
+$ git push origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 979 bytes | 489.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/Bikash0001/Ace.git
+   efc9400..7fe1b21  master -> master

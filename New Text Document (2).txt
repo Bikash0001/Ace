@@ -1,0 +1,63 @@
+differnce between indexing and slicing
+index will single argument and slicing can take n numbers
+
+s[:: ,-1]
+
+Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:54:40) [MSC v.1900 64 bit (AMD64)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> li = ["abc", 24938, 24.56, TRUE]
+Traceback (most recent call last):
+  File "<pyshell#0>", line 1, in <module>
+    li = ["abc", 24938, 24.56, TRUE]
+NameError: name 'TRUE' is not defined
+>>> li =["abc", 24356, 24.56, "TRUE"]
+>>> li
+['abc', 24356, 24.56, 'TRUE']
+>>> type(li)
+<class 'list'>
+>>> ### list is mutable"""
+>>> """ immutable = constant cannot be changed"""
+' immutable = constant cannot be changed'
+>>> li.append[2]
+Traceback (most recent call last):
+  File "<pyshell#6>", line 1, in <module>
+    li.append[2]
+TypeError: 'builtin_function_or_method' object is not subscriptable
+>>> li.append(2)
+>>> li
+['abc', 24356, 24.56, 'TRUE', 2]
+>>> empty = []
+>>> li[-1]
+2
+>>> """ Slicing work"""
+' Slicing work'
+>>> li[:2]
+['abc', 24356]
+>>> li[:-2]
+['abc', 24356, 24.56]
+>>> li1["hero",420,"Chacchi 420"]
+Traceback (most recent call last):
+  File "<pyshell#14>", line 1, in <module>
+    li1["hero",420,"Chacchi 420"]
+NameError: name 'li1' is not defined
+>>> li1 = ["hero",420,"Chacchi 420"]
+>>> li.append(li1)
+>>> 
+>>> li
+['abc', 24356, 24.56, 'TRUE', 2, ['hero', 420, 'Chacchi 420']]
+>>> li[1:]
+[24356, 24.56, 'TRUE', 2, ['hero', 420, 'Chacchi 420']]
+>>> li[3:]
+['TRUE', 2, ['hero', 420, 'Chacchi 420']]
+>>> li[-3:]
+['TRUE', 2, ['hero', 420, 'Chacchi 420']]
+>>> 2 in 'a'
+Traceback (most recent call last):
+  File "<pyshell#22>", line 1, in <module>
+    2 in 'a'
+TypeError: 'in <string>' requires string as left operand, not int
+>>> '3' in 'a'
+False
+>>> 'a' in 'mast'
+True
+>>> 
